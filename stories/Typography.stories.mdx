@@ -1,0 +1,22 @@
+import { Meta, DocsContainer, Canvas } from "@storybook/addon-docs/blocks";
+
+<Meta
+  title="Design/Typography"
+  parameters={{
+         docs: {
+         container: ({ children, context }) => (
+           <DocsContainer context={context}>
+             <div>{children}</div>
+           </DocsContainer>
+         ),
+      },
+   }
+}
+/>
+
+# Typography
+
+<Canvas>
+    <div className="text-9xl font-sans">text-9xl</div>
+    <div className="text-xs font-sans">text-xs</div>
+</Canvas>
