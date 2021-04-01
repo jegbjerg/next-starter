@@ -1,4 +1,3 @@
 # next-starter
 
-A Next.js starter template with everything setup according to my (Henrik
-Jegbjerg Hansen's) preferences.
+Next.js starter template with support for TypeScript, Tailwind JIT, and Storybook.
