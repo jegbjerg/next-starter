@@ -2,7 +2,7 @@
   "name": "next-starter",
   "version": "0.0.0",
   "private": true,
-  "license": "UNLICENSED",
+  "license": "MIT",
   "scripts": {
     "dev": "next",
     "build": "next build",
