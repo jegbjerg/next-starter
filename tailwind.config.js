@@ -1,17 +1,17 @@
-const defaultTheme = require("tailwindcss/defaultTheme");
+const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
-  mode: "jit",
+  mode: 'jit',
   purge: [
-    "./public/**/*.html",
-    "./src/**/*.{js,jsx,ts,tsx}",
-    "./stories/**/*.{js,jsx,ts,tsx}",
-    "./stories/**/*.stories.mdx",
+    './public/**/*.html',
+    './src/**/*.{js,jsx,ts,tsx}',
+    './stories/**/*.{js,jsx,ts,tsx}',
+    './stories/**/*.stories.mdx',
   ],
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Inter var", ...defaultTheme.fontFamily.sans],
+        sans: ['Inter var', ...defaultTheme.fontFamily.sans],
       },
     },
   },
