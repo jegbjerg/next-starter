@@ -5,6 +5,27 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.0.0] - 2021-06-20
+
+### Added
+
+- Add Test component to showcase JIT working.
+
+### Changed
+
+- Upgrade Storybook to latest prerelease version, 6.3.0-rc.11, to get rid of
+  warning.
+- Upgrade postcss-nesting a major version to latest version, 8.0.1, and
+  configure Storybook to use this version.
+- Add Prettier config to use single quotes instead of double quotes.
+- Use Tailwind watch mode with Storybook, to make JIT work with Fast Refresh in
+  Storybook.
+
+### Fixed
+
+- Upgrade @types/react-dom to latest version.
+- Upgrade @types/node to latest version, 15.12.4.
+
 ## [1.2.2] - 2021-06-18
 
 ### Fixed
