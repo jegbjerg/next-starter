@@ -1,13 +1,17 @@
 import classNames from 'classnames';
-import { ReactNode } from 'react';
+import Image, { ImageProps } from 'next/image';
 
 export type Props = {
-  content: ReactNode;
+  label: string;
+  image: ImageProps;
   className: string;
 };
 
-export const Test = ({ content, className }: Props) => (
-  <span className={classNames('text-xl font-bold text-blue-700', className)}>
-    {content}
-  </span>
+export const Test = ({ label, image, className }: Props) => (
+  <>
+    <span className={classNames('text-xl font-bold text-blue-700', className)}>
+      {label}
+    </span>
+    <Image {...image} />
+  </>
 );
