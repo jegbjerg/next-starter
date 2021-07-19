@@ -6,10 +6,12 @@ export const parameters = {
   options: {
     storySort: {
       method: 'alphabetical',
+      order: ['Introduction', 'Design', 'Components'],
     },
   },
   backgrounds: {
-    default: 'light',
+    default: 'bg-gray-100',
+    values: [{ name: 'bg-gray-100', value: '#f3f4f6' }],
   },
 };
 

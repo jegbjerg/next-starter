@@ -1,7 +1,7 @@
 {
   "name": "next-starter",
   "description": "Next.js starter template with support for TypeScript, Tailwind JIT, and Storybook.",
-  "version": "2.1.2",
+  "version": "3.0.0",
   "license": "MIT",
   "homepage": "https://github.com/jegbjerg/next-starter#readme",
   "bugs": "https://github.com/jegbjerg/next-starter/issues",
