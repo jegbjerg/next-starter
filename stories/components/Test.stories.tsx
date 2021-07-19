@@ -21,3 +21,12 @@ WithImage.args = {
   ...Basic.args,
   image: { src: hjh, layout: 'fill' },
 };
+
+export const WithLink: Story<Props> = Template.bind({});
+WithLink.args = {
+  ...Basic.args,
+  link: {
+    href: '/',
+    children: <a>Link</a>,
+  },
+};
