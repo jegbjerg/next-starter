@@ -18,6 +18,6 @@ Basic.args = {
 
 export const WithImage: Story<Props> = Template.bind({});
 WithImage.args = {
+  ...Basic.args,
   image: { src: hjh, layout: 'fill' },
-  className: 'pt-8',
 };
