@@ -1,5 +1,7 @@
 import { Meta, Story } from '@storybook/react';
 import { Props, Test } from '~/components/Test';
+import hjh from './hjh-hot-pink.jpg';
+import Image from 'next/image';
 
 const meta: Meta = {
   title: 'Components/Test',
@@ -11,7 +13,12 @@ const Template: Story<Props> = (args) => <Test {...args} />;
 
 export const Basic: Story<Props> = Template.bind({});
 Basic.args = {
-  label: 'Foobar',
+  content: 'Foobar',
   className: 'pt-8',
 };
-Basic.storyName = 'Test';
+
+export const WithImage: Story<Props> = Template.bind({});
+WithImage.args = {
+  content: <Image src={hjh} layout="fill" />,
+  className: 'pt-8',
+};

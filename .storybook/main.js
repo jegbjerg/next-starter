@@ -18,6 +18,9 @@ module.exports = {
     },
   ],
   webpackFinal: (config) => {
+    config.resolve.alias = {
+      'next/image': require.resolve('./__mocks__/NextJSImageMock.js'),
+    };
     config.resolve.plugins = [
       new TsconfigPathsPlugin({ extensions: config.resolve.extensions }),
     ];
